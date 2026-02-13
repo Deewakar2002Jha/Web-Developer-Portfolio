@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Web Developer Portfolio</title>
+    <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+    <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="portfolio-wrapper">
+      <!-- Navigation -->
+      <nav>
+        <div class="nav-container">
+          <div class="logo">Portfolio</div>
+          <ul class="nav-links">
+            <li><a data-nav="home">Home</a></li>
+            <li><a data-nav="about">About</a></li>
+            <li><a data-nav="skills">Skills</a></li>
+            <li><a data-nav="projects">Projects</a></li>
+            <li><a data-nav="freelancing">Services</a></li>
+            <li><a data-nav="contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <div class="hero-greeting">Hi, I'm</div>
+          <h1 class="hero-name" id="hero-name">Deewakar Jha</h1>
+          <h2 class="hero-title" id="hero-title">
+            Web Developer &amp; Freelancer
+          </h2>
+          <p class="hero-tagline" id="hero-tagline">
+            Passionate about building responsive, user-friendly, and
+            performance-optimized websites that deliver exceptional digital
+            experiences.
+          </p>
+          <div class="cta-buttons">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+          </div>
+        </div>
+      </section>
+      <!-- About Section -->
+      <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="education-cards-container">
+            <div class="education-card" data-card="0">
+              <h3 id="bachelor-title">
+                Bachelor of Science in Computer Science
+              </h3>
+              <p id="bachelor-institution">Stanford University, 2020</p>
+              <div class="about-description" id="bachelor-description">
+                My undergraduate education provided me with a solid foundation
+                in software engineering principles, algorithms, and data
+                structures. This background enables me to build scalable,
+                efficient web applications.
+              </div>
+            </div>
+            <div class="education-card" data-card="1">
+              <h3 id="master-title">Master of Science in Computer Science</h3>
+              <p id="master-institution">MIT, 2022</p>
+              <div class="about-description" id="master-description">
+                My master's degree focused on advanced software architecture,
+                machine learning, and distributed systems. This specialized
+                knowledge allows me to tackle complex technical challenges and
+                implement cutting-edge solutions.
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3
+              style="
+                color: var(--accent-primary);
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+              "
+            >
+              Why Work With Me?
+            </h3>
+            <p
+              style="
+                color: var(--text-secondary);
+                margin-bottom: 1rem;
+                line-height: 1.8;
+              "
+            >
+              I combine technical expertise with a keen eye for design to create
+              websites that not only look great but perform exceptionally. Every
+              project is an opportunity to push boundaries and deliver solutions
+              that exceed expectations.
+            </p>
+            <p style="color: var(--text-secondary); line-height: 1.8">
+              From concept to deployment, I'm committed to clear communication,
+              timely delivery, and building long-term relationships with my
+              clients.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Skills Section -->
+      <section id="skills">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-container">
+          <div class="skill-tags">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Vue.js</span>
+            <span class="skill-tag">Tailwind CSS</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Express</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Webpack</span>
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">CI/CD</span>
+            <!-- Duplicate for seamless loop -->
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Vue.js</span>
+            <span class="skill-tag">Tailwind CSS</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Express</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Webpack</span>
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">CI/CD</span>
+          </div>
+        </div>
+      </section>
+      <!-- Projects Section -->
+      <section id="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image-carousel" data-carousel="0">
+              <button class="carousel-arrow prev" data-carousel-id="0">
+                ‹
+              </button>
+              <button class="carousel-arrow next" data-carousel-id="0">
+                ›
+              </button>
+              <div class="carousel-track">
+                <div class="project-image">
+                  <img
+                    src="asset/homepage.png"
+                    alt="E-Commerce Image 1"
+                    style="width: 100%; height: 100%; object-fit: cover"
+                  />
+                </div>
+                <div class="project-image">
+                  <img
+                    src="asset/tshirt page.png"
+                    alt="E-Commerce Image 2"
+                    style="width: 100%; height: 100%; object-fit: cover"
+                  />
+                </div>
+                <div class="project-image">
+                  <img
+                    src="asset/jacket page.png"
+                    alt="E-Commerce Image 3"
+                    style="width: 100%; height: 100%; object-fit: cover"
+                  />
+                </div>
+              </div>
+              <div class="carousel-nav">
+                <span
+                  class="carousel-dot active"
+                  data-carousel-id="0"
+                  data-slide="0"
+                ></span>
+                <span
+                  class="carousel-dot"
+                  data-carousel-id="0"
+                  data-slide="1"
+                ></span>
+                <span
+                  class="carousel-dot"
+                  data-carousel-id="0"
+                  data-slide="2"
+                ></span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>E-Commerce Platform</h3>
+              <p>
+                A full-stack e-commerce solution with shopping cart, payment
+                integration, and admin dashboard. Built for scalability and
+                performance.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">React</span>
+                <span class="tech-badge">Node.js</span>
+                <span class="tech-badge">MongoDB</span>
+                <span class="tech-badge">Stripe</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://anime-essemble-frontend.onrender.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  🔗 Live Demo
+                </a>
+                <a
+                  href="https://github.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  💻 GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image-carousel" data-carousel="1">
+              <button class="carousel-arrow prev" data-carousel-id="1">
+                ‹
+              </button>
+              <button class="carousel-arrow next" data-carousel-id="1">
+                ›
+              </button>
+              <div class="carousel-track">
+                <div class="project-image">✅</div>
+                <div class="project-image">📋</div>
+                <div class="project-image">👥</div>
+              </div>
+              <div class="carousel-nav">
+                <span
+                  class="carousel-dot active"
+                  data-carousel-id="1"
+                  data-slide="0"
+                ></span>
+                <span
+                  class="carousel-dot"
+                  data-carousel-id="1"
+                  data-slide="1"
+                ></span>
+                <span
+                  class="carousel-dot"
+                  data-carousel-id="1"
+                  data-slide="2"
+                ></span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Task Management App</h3>
+              <p>
+                Collaborative task management tool with real-time updates, team
+                features, and intuitive drag-and-drop interface.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">Vue.js</span>
+                <span class="tech-badge">Firebase</span>
+                <span class="tech-badge">Tailwind</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://example.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  🔗 Live Demo
+                </a>
+                <a
+                  href="https://github.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  💻 GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image-carousel" data-carousel="2">
+              <button class="carousel-arrow prev" data-carousel-id="2">
+                ‹
+              </button>
+              <button class="carousel-arrow next" data-carousel-id="2">
+                ›
+              </button>
+              <div class="carousel-track">
+                <div class="project-image">🌤️</div>
+                <div class="project-image">🗺️</div>
+                <div class="project-image">📈</div>
+              </div>
+              <div class="carousel-nav">
+                <span
+                  class="carousel-dot active"
+                  data-carousel-id="2"
+                  data-slide="0"
+                ></span>
+                <span
+                  class="carousel-dot"
+                  data-carousel-id="2"
+                  data-slide="1"
+                ></span>
+                <span
+                  class="carousel-dot"
+                  data-carousel-id="2"
+                  data-slide="2"
+                ></span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Weather Dashboard</h3>
+              <p>
+                Real-time weather application with location-based forecasts,
+                interactive maps, and beautiful data visualizations.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">API Integration</span>
+                <span class="tech-badge">Chart.js</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://example.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  🔗 Live Demo
+                </a>
+                <a
+                  href="https://github.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  💻 GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image-carousel" data-carousel="3">
+              <button class="carousel-arrow prev" data-carousel-id="3">
+                ‹
+              </button>
+              <button class="carousel-arrow next" data-carousel-id="3">
+                ›
+              </button>
+              <div class="carousel-track">
+                <div class="project-image">📱</div>
+                <div class="project-image">💬</div>
+                <div class="project-image">����</div>
+              </div>
+              <div class="carousel-nav">
+                <span
+                  class="carousel-dot active"
+                  data-carousel-id="3"
+                  data-slide="0"
+                ></span>
+                <span
+                  class="carousel-dot"
+                  data-carousel-id="3"
+                  data-slide="1"
+                ></span>
+                <span
+                  class="carousel-dot"
+                  data-carousel-id="3"
+                  data-slide="2"
+                ></span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Social Media Platform</h3>
+              <p>
+                Modern social networking application with real-time chat,
+                notifications, and user profiles. Features include post
+                creation, likes, comments, and friend connections.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">React</span>
+                <span class="tech-badge">Socket.io</span>
+                <span class="tech-badge">PostgreSQL</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://example.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  🔗 Live Demo
+                </a>
+                <a
+                  href="https://github.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  💻 GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Freelancing Section -->
+      <section id="freelancing">
+        <h2 class="section-title">Available for Freelance</h2>
+        <div class="freelancing-content">
+          <h3>Let's Build Something Amazing Together</h3>
+          <p>
+            I'm currently available for freelance projects and always excited to
+            collaborate on interesting work. Whether you need a complete
+            website, a web application, or just want to improve your existing
+            digital presence, I'm here to help.
+          </p>
+          <div class="services-list">
+            <span class="service-item">🌐 Websites</span>
+            <span class="service-item">💼 Web Applications</span>
+            <span class="service-item">🚀 Landing Pages</span>
+            <span class="service-item">📊 Dashboards</span>
+            <span class="service-item">🔧 API Development</span>
+            <span class="service-item">⚡ Performance Optimization</span>
+          </div>
+          <a href="#contact" class="btn btn-primary" id="cta-text"
+            >Start Your Project</a
+          >
+        </div>
+      </section>
+      <!-- Contact Section -->
+      <section id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+          <p>
+            I'm always open to discussing new projects, creative ideas, or
+            opportunities to be part of your vision. Feel free to reach out!
+          </p>
+          <div class="social-links">
+            <a
+              href="https://www.linkedin.com/in/deewakar-jha-57a030264/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-link"
+              id="linkedin-link"
+              title="LinkedIn"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewbox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"
+                /></svg
+            ></a>
+            <a
+              href="https://github.com/Deewakar2002Jha"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-link"
+              id="github-link"
+              title="GitHub"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewbox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"
+                /></svg
+            ></a>
+            <a
+              href="mailto:deewakarrealme@gmail.com"
+              class="social-link"
+              id="email-link"
+              title="Email"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewbox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                /></svg
+            ></a>
+          </div>
+          <a href="mailto:deewakarrealme@gmail.com" class="btn btn-primary"
+            >Send Me an Email</a
+          >
+        </div>
+      </section>
+      <!-- Footer -->
+      <footer>
+        <p>© 2024 Deewakar Jha. Built with passion and code.</p>
+      </footer>
+    </div>
+    <script src="/_sdk/element_sdk.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
